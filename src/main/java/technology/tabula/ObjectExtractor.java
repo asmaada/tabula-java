@@ -13,7 +13,7 @@ public class ObjectExtractor {
         this.pdfDocument = pdfDocument;
     }
 
-    protected Page extractPage(Integer pageNumber) throws IOException {
+    public Page extractPage(Integer pageNumber) throws IOException {
 
         if (pageNumber > this.pdfDocument.getNumberOfPages() || pageNumber < 1) {
             throw new java.lang.IndexOutOfBoundsException(
